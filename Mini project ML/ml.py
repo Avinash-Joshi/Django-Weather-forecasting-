@@ -15,10 +15,8 @@ def convertToBinaryData(filename):
         binaryData = file.read()
     return binaryData
 
-
-# states = ["Andhra Pradesh", "Arunachal pradesh",
-#           "Assam", "Bihar", "chhatisgarh", "Haryana", "himachal pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "manipur", "meghalaya", "Mizoram", "Nagaland", "odisha", "Punjab", "sikkim", "tamil nadu", "Telangana", "tripura"]
-states=["Telangana"]
+# states=["Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal"]
+states=["Andaman and Nicobar Islan...","Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chandigarh","Chhattisgarh","Dadra and Naga Haveli","Daman and Diu","Delhi","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Ladakh","Lakshadweep","Madhya Pradesh","Maharashtra","Meghalaya","Mizoram","Nagaland","Odisha","Punducherry","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal"]
 
 for i in states:
     i = i.upper()
@@ -88,9 +86,11 @@ for i in states:
     print(x)
     print(type(x))
     print(type(x[0]))
+    import datetime
     from datetime import date
-    Today = date.today()
-    x.append(Today.strftime("%Y-%m-%d"))
+    # Today = date.today()
+    Today=datetime.datetime(2022,12,5)
+    x.append(Today.strftime("%d-%m-%Y"))
     print(x)
     y = df.loc[len-4:, 'temp'].values.tolist()
     print(y)
