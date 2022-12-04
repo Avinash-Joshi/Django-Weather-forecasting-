@@ -45,7 +45,6 @@ nav {
   height: 9ch;
   padding: 0px;
   box-shadow: 0px 0.12px #888888;
-
 }
 
 /* .header nav img{
@@ -67,6 +66,14 @@ nav ul li {
   display: inline;
   background: #ffffff;
   margin: 10px 40px;
+  border: 2px solid rgb(161, 161, 161);
+  border-radius: 2em;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.header nav ul li:hover{
+  border: 2px solid black;
 }
 
 nav ul li a {
@@ -192,6 +199,7 @@ h2 {
   max-height: 50px;
 }
 
+
 .main_body {
   padding-top: 10.9ch;
   padding-left: 1%;
@@ -220,7 +228,7 @@ form .form1 input {
 .button1 {
   font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
   color: #ffffff;
-  background-color: rgb(61, 61, 159);
+  background-color: rgb(84, 84, 157);
   border: none;
   padding: 9.3px 32px;
   /* position: absolute; */
@@ -229,6 +237,11 @@ form .form1 input {
   display: inline-block;
   border-radius: 2em;
   /* font-size: 16px; */
+  cursor: pointer;
+}
+
+.button1:hover{
+  background-color: blue;
 }
 
 /* .current_state {
@@ -365,6 +378,7 @@ form .contact .contactpara textarea {
   text-align: center;
   font-size: 100%;
   padding-top: 0.7%;
+  border: 2px solid black;
 }
 
 form .contact .contactpara input {
@@ -388,6 +402,11 @@ form .contact .contactpara button {
   border-radius: 2em;
   padding: 10px 30px;
   margin: 10px 2px;
+}
+
+form .contact .contactpara button:hover{
+  border: 2.5px solid black;
+  font-weight: bold;
 }
 
 .about {
@@ -575,6 +594,10 @@ form .current_state {
 .box2 h3 img {
   height: 350px;
   width: 590px;
+}
+
+.help{
+  background-color: rgb(255, 245, 231);
 }
 
 .help h3 {
