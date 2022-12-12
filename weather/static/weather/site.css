@@ -1,0 +1,562 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+div,
+section,
+span,
+ul,
+li,
+a,
+header {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  width: auto;
+  height: 9ch;
+}
+
+nav {
+  background: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0;
+  color: black;
+  height: 9ch;
+  padding: 0px;
+  box-shadow: 0px 0.12px #888888;
+}
+
+
+nav ul {
+  background: #ffffff;
+  margin-right: 10%;
+  right: 2;
+  margin: 0;
+  padding-left: 10%;
+}
+
+nav ul li {
+  display: inline;
+  background: #ffffff;
+  margin: 10px 40px;
+  border: 2px solid rgb(161, 161, 161);
+  border-radius: 2em;
+  padding: 3px 7px;
+}
+
+
+nav ul li a {
+  /* Background of HOME */
+  text-decoration: none;
+}
+
+nav img {
+  padding: 0 0%;
+  /*  */
+  align-content: left;
+  background: none;
+  margin-top: 10px;
+  width: 390px;
+  /* /\ Fixes the Width of the image*/
+
+}
+
+
+.logo {
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 130%;
+}
+
+.logo2 {
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 230%;
+  margin-top: -7%;
+  color: rgb(74, 137, 226);
+}
+
+h2 {
+  padding: 0 1%;
+  padding-top: 0.5%;
+}
+
+.image2 {
+  padding-left: 0 0%;
+  margin: 0;
+}
+
+.slider {
+  position: relative;
+  width: 600px;
+  height: 345px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  margin-left: 17px;
+  display: grid;
+
+}
+
+.slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 1000%;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+
+}
+
+.slider ul li {
+  position: relative;
+  height: 100%;
+  float: left;
+}
+
+.slider ul li img {
+  width: 600px;
+  height: 345px;
+}
+
+#slider #prev,
+#slider #next {
+  width: 80px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+
+#slider #prev:hover,
+#slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+
+#slider #prev:hover,
+#slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+
+#slider #prev {
+  left: 10px;
+}
+
+#slider #next {
+  right: 10px;
+}
+
+.slider_text {
+  box-sizing: border-box;
+  display: grid;
+  position: relative;
+  margin-top: -280px;
+  text-align: left;
+  width: 48%;
+  padding: 2;
+  margin-left: 81.5ch;
+  max-height: 50px;
+}
+
+
+.main_body {
+  padding-top: 10.9ch;
+  padding-left: 1%;
+  color: rgb(73, 73, 187);
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+#firstblock {
+  background-image: url("/static/images/Blue and White Gradient Weather Forecast for Instagram Post.png");
+  /* z-index: 100; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid black;
+  background: url("/static/images/Blue and White Gradient Weather Forecast for Instagram Post.png");
+  /* width: 300vh; */
+  box-sizing: border-box;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+form .form1 input {
+  width: 400px;
+}
+
+.italic_form_text {
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 60;
+  padding: 1%;
+  background: none;
+
+}
+
+.button1 {
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #ffffff;
+  background-color: rgb(84, 84, 157);
+  border: none;
+  padding: 9.3px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.button1:hover{
+  background-color: blue;
+}
+
+
+
+.seperator {
+  display: block;
+  margin-top: 41%;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  font-size: 4ch;
+  text-transform: uppercase;
+}
+
+.linear {
+  margin-top: 0.6%;
+  height: 29px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.linear div {
+  display: inline-block;
+  width: 200%;
+  height: 20px;
+  position: absolute;
+  overflow: hidden;
+  animation: linear 20s linear infinite;
+}
+
+.linear span {
+  float: left;
+  width: 20%;
+  position: relative;
+}
+
+@keyframes linear {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -140%;
+  }
+}
+
+form .contact {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 0.3%;
+  text-align: center;
+  font-size: 18px;
+  height: 80ch;
+}
+
+form .contact .contactpara {
+  font-size: 30px;
+}
+
+form .contact .contactpara span {
+  font-weight: 600;
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 230%;
+  margin-top: -7%;
+}
+
+form .contact .contactpara {
+  border: 4px solid black;
+  position: absolute;
+  font-family: source-serif -pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 300px;
+  font-size: 130%;
+  background: url("/static/images/Blue and White Gradient Weather Forecast for Instagram Post.png");
+  padding-bottom: 20px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+form .contact .contactpara textarea {
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  width: 400px;
+  height: 300px;
+  border-radius: 2em;
+  text-align: center;
+  font-size: 100%;
+  padding-top: 0.7%;
+  border: 2px solid black;
+}
+
+form .contact .contactpara input {
+  border: 2px solid rgb(91, 3, 3);
+  border-radius: 1em;
+  padding: 2px 15px;
+  margin: 4px;
+  width: 300px;
+}
+
+form .contact .contactpara i {
+  padding: 2px;
+  margin: 20px 5px;
+  border: 2px solid black;
+  border-radius: 1em;
+}
+
+
+form .contact .contactpara button {
+  border-radius: 2em;
+  padding: 10px 30px;
+  margin: 10px 2px;
+}
+
+form .contact .contactpara button:hover{
+  border: 2.5px solid black;
+  font-weight: bold;
+}
+
+.about {
+  position: relative;
+  background-color: transparent;
+  background: url("/static/images/severeimage.png");
+  opacity: 0.8;
+  text-align: center;
+  display: block;
+  top: 4vh;
+  /* background-size: 100% auto; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 85ch;
+}
+
+.about h3 {
+  padding-top: 2%;
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+  /* line-height: 1; */
+  font-size: 350%;
+  margin-top: -7%;
+  color: rgb(9, 107, 244);
+  font-weight: 600;
+  /* opacity: 2; */
+}
+
+.about h4 {
+  font-size: 200%;
+}
+
+.about p {
+  font-size: 150%;
+  padding: 1.5%;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+.time h1 {
+  color: #000000;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  font-size: 70px;
+  font-weight: 624;
+}
+
+
+
+form .form1 {
+  position: absolute;
+  padding: 0%;
+  height: auto;
+  display: inline;
+  margin-left: 50%;
+  margin-top: 35%;
+  border-radius: 2em;
+  background-color: transparent;
+}
+
+form .current_state {
+  padding: 1.37%;
+  height: 30%;
+  /* width: 60px; */
+  padding-left: 2%;
+  border-radius: 2em;
+}
+
+.textoninputformimage {
+  position: absolute;
+  padding: 1.1%;
+  background-color: transparent;
+  color: #000000;
+  display: inline;
+  margin-left: 46.3%;
+  margin-top: 28.95%;
+  font-size: 3ch;
+  border-color: transparent;
+  text-decoration-line: none;
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.Ponimage {
+  position: absolute;
+  padding: 1.1%;
+  /* background-color: transparent; */
+  font-size: 9ch;
+  color: rgb(0, 0, 0);
+  display: inline;
+  margin-left: 42.2%;
+  margin-top: 23.15%;
+  border-color: transparent;
+  text-decoration-line: none;
+  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.box1 {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 48%;
+  height: 54ch;
+  border-radius: 2em;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  left: 52%;
+
+}
+
+.box2 {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 45%;
+  height: 54ch;
+  border-radius: 2em;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 52%;
+}
+
+.boxinline {
+  border: 0;
+  padding: 1.5%;
+  background: url("/static/images/Blue and White Gradient Weather Forecast for Instagram Post.png");
+  background-size: 100% 100%;
+}
+
+.boxinline h3 {
+  text-align: center;
+}
+
+
+.boxinline .text h3 {
+  font-size: 25px;
+  color: rgb(217, 248, 200);
+}
+
+.box1 h3 {
+  text-align: center;
+  padding: 2.6%;
+  padding-left: 3.5%;
+
+}
+
+.box1 h3 img {
+  height: 350px;
+  width: 590px;
+}
+
+.box2 h3 {
+  text-align: center;
+  padding: 2.6%;
+  padding-left: 3.5%;
+}
+
+
+.box2 h3 img {
+  height: 350px;
+  width: 590px;
+}
+
+.help{
+  background-color: rgb(255, 245, 231);
+}
+
+.help h3 {
+  font-size: 150%;
+  padding: 10px;
+}
+
+.help p {
+  font-size: 150%;
+  padding: 4px 10px 20px 30px;
+}
+
+.about_info h2{
+  font-size: 36px;
+}
+
+.about_info i{
+  color: greenyellow;
+  font-size: 30px;
+}
+
+@media only screen and (min-width:350px) and (max-width:1200px)
+{
+  nav {
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    color: black;
+    height: 9ch;
+    box-shadow: 0px 0.12px #888888;
+  }
+
+  nav ul{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(4px, 1fr));
+    justify-content: space-between;
+  }
+
+  nav ul li{
+    border: 2px solid rgb(66, 66, 66);
+    display: block;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+  }
+}

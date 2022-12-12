@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'weather/site.css'%}">
+    {% block css %}
+    {% endblock %}
+    <title>Weather forecasting</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <!-- <img src="{% static '/logo.png' %}" alt="LOGO" height="79px" width="auto" "> -->
+            <img src="{% static '/images/PicsArt.png' %}" alt="LOGO" height="530%" width="27%">
+            <ul>
+                <li> <a href="/weather">HOME</a></li>
+                <li> <a href="/weather/#contact">CONTACT</a></li>
+                <li> <a href="/weather/#about">ABOUT</a></li>
+                <li> <a href="/weather/help">HELP</a></li>
+            </ul>
+        </nav>
+    </div>
+   
+    {% block body %}
+    {% endblock %}
+</body>
+</html>

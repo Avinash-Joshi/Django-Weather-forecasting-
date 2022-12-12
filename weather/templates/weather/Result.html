@@ -1,0 +1,42 @@
+{% extends 'weather/index.html'%}
+
+{% block result %}
+
+
+<!-- <h3>The data {{Tempplot}}</h3> -->
+<!-- <h3></h3> -->
+<!-- <h3></h3> -->
+
+<!-- Display results on the div class="seperator" here -->
+<!-- <div class="seperator">
+    <h2 style="color: rgb(255, 25, 0); left: au;right:auto;">
+</div> -->
+
+<div class="boxinline">
+    <div class="text">
+        <h3>Showing Result for : {{state}}</h3>
+        <h3>Temperatue : {{temp}}°C</h3>
+        <h3>Wind speed : {{wind}}Km/hr</h3>
+        <h3>Condition : {{condition}}</h3>
+        <!-- <h3>Sunrise {{sunrise}}A.M.</h3> -->
+        <!-- <h3>Sunset {{sunset}}P.M.</h3> -->
+    </div>
+
+    <br>
+    <div class="box2">
+        <h3 class="logo">Temperatue vs Date
+            <br> <img src="/media/{{Tempplot}}" alt="Something wrong">
+        </h3>
+    </div>
+
+    <div class="box1">
+        <h3 class="logo">Condition vs Date
+            <br> <img src="/media/{{Condplot}}" alt="Something wrong">
+        </h3>
+    </div>
+
+</div>
+</h2>
+</div>
+
+{% endblock %}
