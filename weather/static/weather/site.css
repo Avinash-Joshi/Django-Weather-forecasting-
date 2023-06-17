@@ -31,7 +31,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0px 0;
   color: black;
   height: 9ch;
@@ -51,7 +51,7 @@ nav ul {
 nav ul li {
   display: inline;
   background: #ffffff;
-  margin: 10px 40px;
+  /* margin: 10px 40px; */
   border: 2px solid rgb(161, 161, 161);
   border-radius: 2em;
   padding: 3px 7px;
@@ -187,19 +187,24 @@ h2 {
 }
 
 #firstblock {
-  /* background-image: url("/static/images/Blue and White Gradient Weather Forecast for Instagram Post.png"); */
-  /* z-index: 100; */
   background-position: center;
   background-size: cover;
-  /* border: 4px solid black; */
   background: url("/static/images/Untitleddesign.png");
-  /* background-image: url("/static/images/Blue and White Gradient Weather Forecast for Instagram Post.png"); */
-  /* width: 300vh; */
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  text-align: center;
+}
+
+#firstblock form {
+  margin-top: auto;
+  text-align: center;
+}
+
+#firstblock form .form1 {
+  margin: auto;
 }
 
 .time h1 {
@@ -212,27 +217,17 @@ h2 {
 
 .textoninputformimage {
   /* position: absolute; */
-  padding: 1.1%;
   background-color: transparent;
   color: #000000;
   display: inline;
-  margin: 20px;
-  margin-left: 30.3%;
+  /* margin: 20px; */
+  /* margin-left: 30.3%; */
   margin-top: 28.95%;
   font-size: 3ch;
-  border-color: transparent;
+  /* border-color: transparent; */
+  margin: auto;
   text-decoration-line: none;
-  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.textoninputformimage h1 {
-  display: inline;
-  text-decoration-line: none;
-  font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 250px;
-  position: relative;
-  left: 4%;
-  margin: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .textoninputformimage h2 {
@@ -285,9 +280,9 @@ form .form1 button {
   background-color: rgb(84, 84, 157);
   border: none;
   padding: 9.3px 32px;
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
-  display: inline-block;
+  display: inline;
   border-radius: 2em;
   cursor: pointer;
 }
@@ -350,6 +345,10 @@ form .contact {
   text-align: center;
   font-size: 18px;
   height: 80ch;
+  background: url("/static/images/cloudimage.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 7%;
 }
 
 form .contact .contactpara {
@@ -369,11 +368,8 @@ form .contact .contactpara {
   font-family: source-serif -pro, Georgia, Cambria, "Times New Roman", Times, serif;
   font-weight: 300px;
   font-size: 130%;
-  background: url("/static/images/cloudimage.png");
   padding-bottom: 20px;
   width: 100%;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
 }
 
 form .contact .contactpara textarea {
@@ -421,7 +417,7 @@ form .contact .contactpara button:hover {
   opacity: 0.8;
   text-align: center;
   display: block;
-  top: 4vh;
+  /* margin-top: 20px; */
   /* background-size: 100% auto; */
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -547,69 +543,64 @@ form .current_state {
   font-size: 30px;
 }
 
-@media only screen and (min-width:350px) and (max-width:1360px) {
-  nav {
-    background: #ffffff;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-    color: black;
-    height: 9ch;
-    box-shadow: 0px 0.12px #888888;
+@media only screen and (min-width:789px) and (max-width:1230px) {
+
+  #slider,
+  .slider_text,
+  .main_body {
+    display: none;
   }
 
-  nav ul {
-    width: 50%;
-    background-color: purple;
-    display: inline;
+  .textoninputformimage {
+    text-align: center;
     position: relative;
-    right: 10%;
-    /* grid-template-columns: repeat(auto-fit, minmax(4px, 1fr)); */
-    /* justify-content: space-between; */
-    justify-content: center;
-    padding: 0px;
-    margin: 0px;
   }
 
-  nav ul li {
-    border: 2px solid rgb(66, 66, 66);
-    /* display: block; */
+  .textoninputformimage {
+    align-items: center;
   }
 
-  nav ul li a {
-    text-decoration: none;
+
+  #firstblock form {
+    margin-top: auto;
+    text-align: center;
   }
 
-  .slider {
-    display: block;
-    border: 2px solid blue;
-    width: 100%;
-    height: 345px;
-    overflow: hidden;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-    margin-left: 17px;
+  #firstblock form .form1 {
+    margin: auto;
+  }
+}
+
+
+@media only screen and (min-width:30px) and (max-width:789px) {
+
+  #slider,
+  .slider_text,
+  .main_body {
+    display: none;
   }
 
-  .slider ul li{
-    width: 100%;
-  }
-  .slider ul li img{
-    width: fit-content;
+  .header {
+    align-items: center;
   }
 
-  .slider_text {
-    display: block;
-    box-sizing: border-box;
-    border: 2px solid blue;
+  .header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .slider_text .logo2 {
-    border: 2px solid rgb(0, 255, 89);
+  .header nav img {
+    /* display: block;
+    padding: 1px;
+    margin: 1px;
+    height: 50px;
+    border: 2px solid blue; */
+    display: none;
   }
 
-  .slider_text .logo {
-    border: 2px solid rgb(255, 0, 60);
+  .header nav ul {
+    text-align: center;
+    padding-top: 30px;
   }
 }
